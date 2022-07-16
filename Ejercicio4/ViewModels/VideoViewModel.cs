@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 
 using DemoCamara.Services;
+using NativeMedia;
 
 namespace Ejercicio4.ViewModels
 {
@@ -41,10 +42,11 @@ namespace Ejercicio4.ViewModels
 
         private async Task ChooseVideo()
         {
-            var file = await cameraService.ChooseVideo();
+            //var file = await cameraService.ChooseVideo();
 
-            if (file != null)
-                VideoURL = file.Path;
+            //if (file != null)
+                //VideoURL = file.Path;
+            await MediaGallery.SaveAsync(MediaFileType.Video, VideoURL);
         }
     }
 }

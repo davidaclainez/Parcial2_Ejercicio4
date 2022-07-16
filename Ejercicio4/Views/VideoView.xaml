@@ -9,8 +9,8 @@
     <ContentPage.Content>
         <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
             <mm:VideoView WidthRequest="300" HeightRequest="300" Source="{Binding VideoURL}" />
-            <Button Text="Record Video" Command="{Binding TakeVideoCommand}" />
-            <Button Text="Choose Video" Command="{Binding ChooseVideoCommand}" />
+            <Button Text="Grabar Video" Command="{Binding TakeVideoCommand}" />
+            <Button Text="Guardar Video" Command="{Binding ChooseVideoCommand}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
