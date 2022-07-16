@@ -10,7 +10,7 @@ namespace Ejercicio4
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new Views.VideoView());
         }
 
         protected override void OnStart()
